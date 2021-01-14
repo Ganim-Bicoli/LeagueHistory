@@ -1,0 +1,200 @@
+﻿body {
+    padding:0px;
+    margin:0px;
+}
+p {
+    padding:0px;
+    margin:0px;
+    color: #30D497;
+}
+.TeamScorebored {
+    position: relative;
+    width: 60%;
+    height: 430px;
+
+}
+TeamScorebored div{
+    float:left;
+}
+
+.TeamWinLose{
+    position:relative;
+    width:100%;
+    height:9%;
+}
+.TeamWinLose div{
+    float:left;
+}
+#TeamVictoryStatus{
+    position:relative;
+    left:100%;
+    top:5px;
+    font-weight:bold;
+   
+}
+
+.SumPerformance {
+    position: relative;
+
+    width: 50%;
+}
+    .SumPerformance p {
+        margin-left:60%;
+    }
+.TeamBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #242339;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.ChampionInfo {
+    position: relative;
+    margin: 5px;
+    height: 13%;
+    width: 100%;
+    float: left;
+  
+}
+
+
+    .ChampionInfo div{
+        float:left;
+    }
+
+    .ChampionFirst {
+        position: relative;
+        height: 100%;
+        width: 22%;
+
+    }
+    .ChampionFirst div{
+        float:left;
+    }
+    .ChampionImg {
+        position: relative;
+        width:65px;
+        float: left;
+    }
+
+    .ChampionImg img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+.ChampionSum {
+    position: relative;
+    width: 12%;
+    height: 100%;
+
+}
+.ChampionSum img{
+    position:relative;
+    left:15%;
+    top:5%;
+}
+.ChampionName{
+    position:relative;
+    width:46%;
+    height:100%;
+
+}
+.ChampionName div {
+    position:relative;
+    height:50%;
+    width:100%;
+
+}
+.ChampionName div p {
+    position:relative;
+    margin-top:0px;
+    font-size:18px;
+    text-align:center;
+}
+
+/*mitten delen*/
+
+.ChampionSecond{
+    position:relative;
+    height:100%;
+    width:7%;
+   
+}
+.ChampionSecond div{
+    position:relative;
+    width:100%;
+    height:50%;
+   
+}
+    .ChampionSecond div p{
+       position:relative;
+       margin:0px;
+       text-align:center;
+    }
+
+/* mitten items*/
+.champImgInfo {
+    position: relative;
+}
+
+    .champImgInfo div {
+        float: left;
+    }
+
+.champItemsDiv {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    margin-left: 5px;
+    margin-top:5px;
+
+}
+
+.champItems img {
+    position: relative;
+    float: left;
+    width: 25px;
+    border: 1px solid #30D497;
+}
+
+.champItems {
+    position: relative;
+    width: 10%;
+    background-color:orange;    
+    margin-top: 0.7%;
+}
+/*.champItems img {
+    position: relative;
+    float: left;
+    margin-left: 4px;
+    width: 25px;
+    left: 4%;
+    top: 15%;
+    border: 1px solid #30D497;
+}
+
+.champItems {
+    position: relative;
+    background-color: orange;
+    width: 8%;
+    margin-top: 5px;
+}*/
+.Testet {
+    top: 500px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.Testet div{
+    float:left;
+}
+
+.GreenLine{
+    position:relative;
+    height:60px;
+    width:15px;
+    top:5px;
+}

@@ -1,0 +1,30 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+}
+.HeaderDiv {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    height: 50px;
+    top:25px;
+}
+.NavBar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #30D497;
+}
+    .NavBar ul {
+        position: relative;
+        list-style: none;
+        color: white;
+        text-align: center;
+    }
+
+        .NavBar ul li {
+            position:relative;
+            float:left;
+            width:10%;
+            left:25%;
+        }

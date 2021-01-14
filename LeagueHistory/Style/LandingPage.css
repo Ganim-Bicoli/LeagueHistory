@@ -1,0 +1,147 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    background-image: url(/Images/BackgroundImg.jpg);
+}
+
+.MasterClass {
+}
+/*First half*/
+.FirstHalf {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 840px;
+}
+
+.Title {
+    position: relative;
+    width: 80%;
+    height:100px;
+    margin-top:17%;
+
+}
+
+.TitleMid{
+    float:left;
+}
+.Title img {
+    position: relative;
+    margin-left:12%;
+    float: left;
+}
+
+.Title p {
+    float: left;
+    color: #11FFA7;
+    font-size: 72px;
+    margin: 0px;
+}
+/**/
+.SubHeading {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+    .SubHeading p {
+        margin: 0px;
+        position: relative;
+        font-size: 22px;
+        font-weight: bold;
+        color: snow;
+        height: 30px;
+        margin-left:12%;
+    }
+
+.ChampionsDemo{
+    position:relative;
+    margin-left:8%;
+}
+/*Second half*/
+
+.SecondHalf {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 840px;
+
+}
+
+.SecondHalf div{
+    float: left;
+
+}
+.SecondDiv1 {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.SecondDiv1 img {
+    position:relative;
+    float:right;
+    margin-top:80%;
+    margin-right:2%;
+}
+
+.SecondDiv2 {
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+.SecondDiv2 p {
+    margin:0px;
+    padding:0px;
+    font-size:40px;
+}
+.DivForm{
+    width:70%;
+    position:relative;
+    margin-top:40%;
+}
+#DivForm-P {
+    font-size: 45px;
+    color: #11FFA7;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.TextFormInput {
+    text-decoration-style: none;
+    border-style: none;
+    height: 40px;
+    font-size: 25px;
+    font-weight:bold;
+    position: relative;
+    width: 100%;
+    color:white !important;
+    background-color: transparent;
+    border-bottom: 4px solid #30D497;
+    border-radius:2px;
+    margin-bottom:3%;
+
+}
+::-webkit-input-placeholder {
+    color: white;
+    background-color: transparent;
+    border-style: none;
+}
+
+::-moz-placeholder {
+    color: white;
+    background-color: transparent;
+
+}
+
+:-ms-input-placeholder {
+    color: white;
+    background-color: transparent;
+}
+
+:-o-input-placeholder {
+    color: white;
+    background-color: transparent;
+} 
+.SearchFormInput {
+    position: relative;
+}

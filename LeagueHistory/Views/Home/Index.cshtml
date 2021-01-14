@@ -1,0 +1,63 @@
+﻿
+<!DOCTYPE html>
+@{
+
+    Layout = "~/SharedLayout/_Header.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/LandingPage.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="MasterClass">
+        <div class="FirstHalf">
+
+            <div class="Title">
+
+                <img src="~/Images/Line.png" alt="Alternate Text" />
+                <p>League History</p>
+
+            </div>
+
+            <div class="SubHeading">
+                <p>
+                    Search for games and find out how well you did.
+                    <br />
+                    With
+                    <span style="color: #11FFA7;">League History</span> you get a simpler and better analytic view of your games.
+                </p>
+            </div>
+
+            <div>
+                <img class="ChampionsDemo" src="~/Images/Champions.png" alt="Alternate Text" />
+            </div>
+        </div>
+
+        <div class="SecondHalf">
+            <div class="SecondDiv1">
+                <img src="~/Images/Line2.png" alt="Alternate Text" />
+            </div>
+            <div  class="SecondDiv2">
+                <div class="DivForm">
+                    <p id="DivForm-P">Search for your game</p>
+                    @using (Html.BeginForm("DisplayAccount", "Home"))
+                    {
+                        <p>@Html.TextBox("selectedRegion", null, new { placeholder = "Select Region", @class = "TextFormInput" })</p>
+                        <p>@Html.TextBox("historyNumber", null, new { placeholder = "Select number of history", @class = "TextFormInput" })</p>
+                        <p>@Html.TextBox("user", null, new { placeholder = "User name", @class = "TextFormInput" })</p> //, @class = "InlogForm"
+
+                        <input type="submit" value="Search" class="SearchFormInput" />
+
+                    }
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

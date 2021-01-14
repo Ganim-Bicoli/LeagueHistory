@@ -1,0 +1,312 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    background-image: url(/Images/BackgroundImg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    color: #30D497;
+}
+hr {
+    width: 80%;
+    border-radius: 5px;
+
+    border: 1px solid #D43030;
+    
+    box-shadow: 0 8px 6px -6px black;
+}
+.champBox{
+    position:sticky;
+    height:100%;
+    width:100%;
+}
+
+.ChampionDisplay {
+    position: relative;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 25%;
+   
+    z-index: 1;
+    height: 500px;
+    float:left;
+    left:10%;
+    
+}
+
+.ChampionImg {
+    position: relative;
+    height: 100%;
+    width: 55%;
+    background-color: aqua;
+    float: left;
+
+}
+.ChampionImg img{
+    left:-50px;
+    height:100%;
+    width:100%;
+
+    border-radius:5px;
+
+}
+
+.Champion {
+    position: relative;
+    top: 2.5%;
+    height: 95%;
+    width: 45%;
+    background-color: #16191C;
+    float: left;
+    margin: 0px;
+}
+.Champion-info1{
+    width:100%;
+    height:100px;
+}
+.champQueLane{
+    width:100%;
+    height:50px;
+}
+.champQueLane p {
+    position: relative;
+    left: 2.5%;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+.champQueLane .champQueHeader p{
+    font-size:15px;
+    font-weight:100;
+}
+
+.champName {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.champUnderTitle {
+    font-size: 15px;
+}
+
+#champTopAlign p {
+    width: 100%;
+    height: 30%;
+
+    margin: 0px;
+    text-align: center;
+}
+
+.champImgInfo{
+   position:relative;
+    width:100%;
+    height:130px;
+}
+.champImgInfo div {
+    float: left;
+}
+
+
+/*
+    champion items
+*/
+.champItems {
+    position: relative;
+    height: 100%;
+    width: 62%;
+
+    left:0%;
+}
+
+.champItemsDiv {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    margin-bottom:2%;
+    top:10%;
+
+}
+.champItems img {
+    position: relative;
+    float: left;
+    margin-left: 4px;
+    width: 37px;
+    left: 4%;
+    top: 15%;
+    border: 1px solid #30D497;
+}
+
+
+/*
+    Champion summoner spells
+*/
+
+.champSumSpells{
+ position:relative;
+ left:3%;
+ width:18%;
+ height:100%;
+}
+.champSum{
+    position:relative;
+    height:30%;
+    width:100%;
+    top:13%;
+
+    
+}
+    .champSum img {
+        position: relative;
+        top: 20%;
+        left: 10%;
+        width: 30px;
+        border: 1px solid #30D497;
+    }
+
+/*
+    champion masteries
+
+*/
+
+.champMasteries {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    left:4%;
+}
+
+
+.champMasteries .champMastery{
+    position:relative;
+    height:30%;
+    width:100%;
+}
+.champMasteries .champMastery img{
+    position:relative;
+    top:70%;
+    
+    width:22px;
+}
+
+
+/*Game Stats*/
+
+.GameStats{
+    position:relative;
+    width:100%;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    margin:0px;
+}
+.GameStatsWin {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.GameStatsLose{
+    position:relative;
+    width:100%;
+    margin:0px;
+    text-align:center;
+    margin-bottom:5px;
+    color:darkred;
+}
+
+/*GameStats - kills mm*/
+
+.KDAStats div{
+    float:left;
+}
+.IngameStats {
+    width: 100%;
+    height: 160px;
+
+}
+
+.KDAStats{
+    position:relative;
+    float:left;
+    width:100%;
+    height:25%;
+}
+
+.KDAStats img {
+    position:relative;
+    float:right;
+    margin-right:15%;
+    top:30%;
+}
+.KDAStatsImg{
+    position:relative;
+    width:36%;
+    height:100%;
+}
+.KDA {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    text-align:center;
+}
+.KDA p{
+       float:left;
+       margin:0px;
+       margin-left:5%;
+       font-size:17px;
+       font-weight:bold;
+       margin-top:7%;
+       text-align:center;
+}
+.tet{
+    position:relative;
+    text-align:center;
+    width:55%;  
+}
+
+
+/*- test - */
+
+.Test1{}
+/*- test -*/
+.StörreDiv {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color: orange;
+}
+.StörreDiv div{
+    float:left;
+}
+
+
+.Div1{
+
+    width:30%;
+    height:100%;
+    background-color:blue;
+}
+.Div2 {
+
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+.Div3 {
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+}
+.mindreDiv{
+    height:100%;
+    width:100%;
+    float:left;
+}

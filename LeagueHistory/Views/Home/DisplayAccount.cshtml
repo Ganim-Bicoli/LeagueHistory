@@ -1,0 +1,179 @@
+﻿@model  List<LeagueHistory.Models.myClass.MyViewModel>
+
+@{
+
+    Layout = "~/SharedLayout/_Header.cshtml";
+}
+
+<!DOCTYPE html>
+<link href="~/Style/displayAccountStyle.css" rel="stylesheet" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayAccount</title>
+</head>
+<body>
+
+    <div>
+
+        <div class="champBox">
+
+
+
+            <div>
+
+
+
+                @for (int i = 0; i < ViewBag.AmmountOfGames; i++)
+                {
+                    <div class="ChampionDisplay">
+
+                        <div class="ChampionImg">
+                            <a href="@Url.Action("Index", "SelectedMatch", new {  gameId = Model[0].TheSecondTable[i].gameId }, null)">
+                                <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + @Html.DisplayFor(x => Model[0].TheSecondTable[i].championName) + "_1.jpg")" alt="ChampionImg" />
+                            </a>
+                        </div>
+                        <div class="Champion">
+
+                            <div class="Champion-info1">
+                                <div id="champTopAlign">
+                                    <p class="champName">@Html.DisplayFor(x => Model[0].TheSecondTable[i].championName)</p>
+                                    <p class="champUnderTitle">Blade runner</p>
+                                </div>
+                                <hr />
+                                <div class="champQueLane">
+                                    <div class="champQueHeader">
+                                        <p>Queue</p>
+                                        <p>Position</p>
+                                    </div>
+                                    <div>
+                                        <p class="">@Html.DisplayFor(x => Model[0].TheSecondTable[i].role) </p>  @*why 0 on both? first i understand but why second?*@
+
+                                        <p class="">  @Html.DisplayFor(x => Model[0].TheSecondTable[i].lane) </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="champImgInfo">
+                                    <div class="champItems">
+                                        <div class="champItemsDiv">
+                                            @*<img src="imagenotfound.gif" alt="Image not found" onerror="this.onerror=null;this.src='imagefound.gif';" />*@
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/item/"+Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.item0)+".png")" onerror="this.onerror=null;this.src='/Images/NoItem.png'" />
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/item/"+Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.item1)+".png")" onerror="this.onerror=null;this.src='/Images/NoItem.png'" />
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/item/"+Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.item2)+".png")" onerror="this.onerror=null;this.src='/Images/NoItem.png'" />
+
+                                        </div>
+
+
+                                        <div class="champItemsDiv">
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/item/"+Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.item3)+".png")" onerror="this.onerror=null;this.src='/Images/NoItem.png'" />
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/item/"+Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.item4)+".png")" onerror="this.onerror=null;this.src='/Images/NoItem.png'" ; />
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/item/"+Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.item5)+".png")" onerror="this.onerror=null;this.src='/Images/NoItem.png'" ; />  @*onerror="this.onerror=null;this.src='/Images/NoItem.png'"; Defualt bild om inte hittat någon. Och så ingen oändlig loop.  *@
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="champSumSpells">
+                                        <div class="champSum">
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/spell/"+ Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.SummonerSpell1)+".png")" />
+                                        </div>
+                                        <div class="champSum">
+                                            <img src="@Url.Content("http://ddragon.leagueoflegends.com/cdn/10.14.1/img/spell/"+ Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.SummonerSpell2)+".png")" />
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="champMasteries">
+                                        <div class="champMastery">
+                                            <img src="~/Images/mastery1.png" alt="Alternate Text" />
+                                        </div>
+                                        <div class="champMastery">
+                                            <img src="~/Images/mastery2.png" alt="Alternate Text" />
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <hr class="HrStyle" />
+
+                                <div>
+                                    <div>
+                                        <p class="GameStats">Game Stats</p>
+                                    </div>
+                                    <div>
+                                        @if (@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.winStatus).ToString() == "Victory")
+                                        {
+                                            <p class="GameStatsWin">@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.winStatus)</p>
+                                        }
+                                        else
+                                        {
+                                            <p class="GameStatsLose">@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.winStatus)</p>
+                                        }
+                                    </div>
+
+                                    <div class="IngameStats">
+
+
+                                        <div class="KDAStats">
+                                            <div class="KDAStatsImg">
+                                                <img src="~/Images/KDA.png" alt="Alternate Text" />
+                                            </div>
+                                            <div class="KDA">
+                                                <p>@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.Kills) /</p>
+                                                <p>@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.Death) /</p>
+                                                <p>@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.Assist)</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="KDAStats">
+                                            <div class="KDAStatsImg">
+                                                <img src="~/Images/Minion.png" alt="Alternate Text" />
+                                            </div>
+                                            <div class="KDA">
+                                                <p class="tet">@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.totalMinionsKilled)</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="KDAStats">
+                                            <div class="KDAStatsImg">
+                                                <img src="~/Images/GoldEarned.png" alt="Alternate Text" />
+                                            </div>
+                                            <div class="KDA">
+                                                <p class="tet">@Html.DisplayFor(x => Model[0].TheFirstTable[i].gameParticipants[0].singelParticipant.goldEarned)</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            @*@Html.DisplayFor(x => item.platformId)
+                                @Html.DisplayFor(x => item.queue)
+                                @Html.DisplayFor(x => item.season)
+                                @Html.DisplayFor(x => item.timestamp)
+                                @Html.DisplayFor(x => item.gameId)*@
+
+                        </div>
+                    </div>
+
+
+                }
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+</html>
