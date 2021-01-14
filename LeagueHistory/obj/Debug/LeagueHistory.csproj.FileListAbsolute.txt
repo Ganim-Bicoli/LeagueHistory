@@ -98,7 +98,6 @@ C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\b
 C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\bin\System.Web.Helpers.xml
 C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\bin\System.Web.Mvc.xml
 C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\obj\Debug\LeagueHistory.csprojAssemblyReference.cache
 C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\obj\Debug\LeagueHistory.csproj.CoreCompileInputs.cache
 C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\obj\Debug\LeagueHistory.sourcelink.json
 C:\Users\ngadh\Documents\c# projekt\League History\LeagueHistory\LeagueHistory\obj\Debug\LeagueHistory.csproj.CopyComplete

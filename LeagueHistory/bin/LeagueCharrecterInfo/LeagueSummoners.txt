@@ -1,0 +1,1 @@
+SummonerBarrier,SummonerBoost,SummonerDot,SummonerExhaust,SummonerFlash,SummonerHaste,SummonerHeal,SummonerMana,SummonerPoroRecall,SummonerPoroThrow,SummonerSmite,SummonerSnowball,SummonerTeleport

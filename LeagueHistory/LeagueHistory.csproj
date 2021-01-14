@@ -293,7 +293,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ChampionAvgDBController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SelectedMatchController.cs" />
     <Compile Include="Global.asax.cs">
@@ -303,12 +302,12 @@
     <Compile Include="Models\ChampData.cs" />
     <Compile Include="Models\ChampionMastery.cs" />
     <Compile Include="Models\info.cs" />
+    <Compile Include="Models\LeagueChampionsAbilities.cs" />
     <Compile Include="Models\matchInfo.cs" />
     <Compile Include="Models\MatchlistDto.cs" />
     <Compile Include="Models\myClass\championInfo.cs" />
     <Compile Include="Models\myClass\championSummonerSpell.cs" />
     <Compile Include="Models\myClass\MyViewModel.cs" />
-    <Compile Include="Models\MySQLModell\SummonerAvg.cs" />
     <Compile Include="Models\SummonerV4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
